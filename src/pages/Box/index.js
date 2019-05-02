@@ -33,7 +33,7 @@ export default class Box extends Component {
   }
 
   handleUpload = (files) => {
-    files.foreach(file => {
+    files.forEach(file => {
       const data = new FormData()
       const box = this.props.match.params.id
       data.append('file', file)
