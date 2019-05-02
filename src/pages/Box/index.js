@@ -16,7 +16,7 @@ export default class Box extends Component {
   async componentDidMount(){
     this.subscribeToNewFiles()
     const box = this.props.match.params.id
-    const response = await api.get(`box/${box}`)
+    const response = await api.get(`boxes/${box}`)
 
     this.setState({ box: response.data })
   }
